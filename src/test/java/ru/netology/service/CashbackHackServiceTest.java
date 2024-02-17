@@ -13,17 +13,17 @@ public class CashbackHackServiceTest {
         assertEquals(service.remain(900), 100);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void ifAmount0() {
         assertEquals(service.remain(1), 999);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void ifAmount5000() {
         assertEquals(service.remain(10000), 1000);
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void ifAmount1000() {
         assertEquals(service.remain(1000), 0);
     }
